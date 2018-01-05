@@ -88,8 +88,8 @@ const flipTile = (playerBoard, bombBoard, rowIndex, columnIndex) => {
     }
 };
 
-const playerBoard = generatePlayerBoard(3,4);
-const bombBoard = generateBombBoard(3,4,5);
+const playerBoard = generatePlayerBoard(10,10);
+const bombBoard = generateBombBoard(10,10,10);
 
 console.log('Player Board: ');
 printBoard(playerBoard);
@@ -97,7 +97,7 @@ printBoard(playerBoard);
 console.log('Bomb Board: ');
 printBoard(bombBoard);
 
-console.log('Number of bombs adjacent to (1,1) is: ' + getNumberOfNeighborBombs(bombBoard, 0, 0));
+// console.log('Number of bombs adjacent to (1,1) is: ' + getNumberOfNeighborBombs(bombBoard, 0, 0));
 flipTile(playerBoard, bombBoard, 0, 0);
 console.log('Updated Player Board: ');
 printBoard(playerBoard);
